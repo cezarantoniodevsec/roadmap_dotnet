@@ -3,7 +3,7 @@ using roadmap_dotnet.SOLID.Liskov;
 
 namespace Test_RoadMap
 {
-    public class UT_SOLID
+    public class UT_Solid
     {
         [Fact]
         public void testWithoutLiskov()
