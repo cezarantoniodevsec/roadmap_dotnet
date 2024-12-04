@@ -1,11 +1,6 @@
-﻿using roadmap_dotnet.DesignPatterns.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using roadmap_dotnet.DesignPatterns.Observer.Interfaces;
 
-namespace roadmap_dotnet.DesignPatterns.Implementacoes
+namespace roadmap_dotnet.DesignPatterns.Observer.Implementacoes
 {
     public class AssinanteConcretoB : IObservador
     {

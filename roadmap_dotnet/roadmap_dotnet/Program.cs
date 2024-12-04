@@ -1,8 +1,6 @@
-﻿using roadmap_dotnet.DesignPatterns.Implementacoes;
+﻿using roadmap_dotnet.DesignPatterns.Observer.Implementacoes;
 
-Console.WriteLine("Hello, World!");
-
-TestaObserver();
+//TestaObserver();
 
 static void TestaObserver()
 {

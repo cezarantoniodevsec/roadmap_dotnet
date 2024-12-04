@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace roadmap_dotnet.DesignPatterns.Interfaces
+﻿namespace roadmap_dotnet.DesignPatterns.Observer.Interfaces
 {
     public interface IPublicacao
     {

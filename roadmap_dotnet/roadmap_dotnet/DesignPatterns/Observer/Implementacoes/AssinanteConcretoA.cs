@@ -1,15 +1,9 @@
-﻿using roadmap_dotnet.DesignPatterns.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices.JavaScript;
-using System.Text;
-using System.Threading.Tasks;
+﻿using roadmap_dotnet.DesignPatterns.Observer.Interfaces;
 
-namespace roadmap_dotnet.DesignPatterns.Implementacoes
+namespace roadmap_dotnet.DesignPatterns.Observer.Implementacoes
 {
     public class AssinanteConcretoA : IObservador
-    {        
+    {
         public void Update(IPublicacao notificacao)
         {
             if ((notificacao as Publicacao).Status < 3)
