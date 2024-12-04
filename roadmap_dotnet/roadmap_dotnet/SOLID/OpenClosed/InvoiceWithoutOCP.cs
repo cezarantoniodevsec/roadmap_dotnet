@@ -20,5 +20,5 @@
     {
         FinalInvoice,
         ProposedInvoice
-    };   
+    };
 }

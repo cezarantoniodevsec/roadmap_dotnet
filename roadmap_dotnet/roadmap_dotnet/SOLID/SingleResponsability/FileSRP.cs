@@ -2,9 +2,9 @@
 {
     internal class FileSRP
     {
-        public void createFile() 
+        public void createFile()
         {
-            Console.WriteLine("Create file");            
+            Console.WriteLine("Create file");
         }
     }
 }

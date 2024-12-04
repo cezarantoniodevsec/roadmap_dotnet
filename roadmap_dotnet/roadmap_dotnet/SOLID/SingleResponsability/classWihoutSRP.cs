@@ -20,7 +20,7 @@
             Console.WriteLine("Create File");
         }
 
-        public void manageLogOfApplication() 
+        public void manageLogOfApplication()
         {
             Console.WriteLine("Manage Log");
         }

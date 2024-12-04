@@ -2,7 +2,7 @@
 {
     internal class DatabaseSRP
     {
-        public void deleteRecords() 
+        public void deleteRecords()
         {
             Console.WriteLine("Deleting records");
         }

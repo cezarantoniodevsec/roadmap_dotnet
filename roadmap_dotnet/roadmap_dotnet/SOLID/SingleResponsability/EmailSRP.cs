@@ -5,6 +5,6 @@
         public void SendEmail()
         {
             Console.WriteLine("Send Email");
-        } 
+        }
     }
 }

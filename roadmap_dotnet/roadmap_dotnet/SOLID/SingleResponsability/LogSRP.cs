@@ -2,9 +2,9 @@
 {
     internal class LogSRP
     {
-        public void createLog() 
+        public void createLog()
         {
-            Console.WriteLine("Cria log");        
+            Console.WriteLine("Cria log");
         }
     }
 }
