@@ -1,6 +1,6 @@
 ﻿using roadmap_dotnet.DesignPatterns.Observer.Implementacoes;
-
-//TestaObserver();
+using roadmap_dotnet.Logging;
+using Serilog;
 
 static void TestaObserver()
 {
@@ -19,5 +19,17 @@ static void TestaObserver()
     assunto.removeDaAssintura(observerB);
 
     assunto.geraNotificacao();
+    Console.ReadKey();
+}
+
+static void TesteComLog()
+{
+    Log.Logger = new LoggerConfiguration()
+        .WriteTo.File($"{Environment.CurrentDirectory}/log.txt", rollingInterval: RollingInterval.Day)
+        .CreateLogger();
+
+    var classeComLog = new ClasseComLog();
+    classeComLog.facaAlgumaCoisa();
+
     Console.ReadKey();
 }
