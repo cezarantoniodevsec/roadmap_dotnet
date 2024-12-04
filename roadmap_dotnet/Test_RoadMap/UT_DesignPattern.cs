@@ -13,8 +13,8 @@ namespace Test_RoadMap
             sortingAlgorithm = new BubbleSort();
 
             // Given
-            var input = TestSortUtils.DISORDERED_ARRAY;
-            var expectedResult = TestSortUtils.ORDERED_ARRAY;
+            var input = TestUtils.DISORDERED_ARRAY;
+            var expectedResult = TestUtils.ORDERED_ARRAY;
             // When
             var actualResult = sortingAlgorithm.sort(input);
             // Then            
