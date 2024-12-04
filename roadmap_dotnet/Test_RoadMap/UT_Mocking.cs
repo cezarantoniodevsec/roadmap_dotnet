@@ -1,19 +1,12 @@
-﻿using Moq;
-using FluentAssertions;
-using roadmap_dotnet.DesignPatterns.Strategy.Implementacoes;
-using roadmap_dotnet.DesignPatterns.Strategy.Interfaces;
+﻿using FluentAssertions;
+using Moq;
 using roadmap_dotnet.Mocking;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Test_RoadMap
 {
     public class UT_Mocking
     {
-        private Mock<IServicoConsultaCredito> mock;       
+        private Mock<IServicoConsultaCredito> mock;
 
         public UT_Mocking()
         {
@@ -85,8 +78,8 @@ namespace Test_RoadMap
         {
             StatusConsultaCredito status =
                 ObterStatusAnaliseCredito(TestUtils.CPF_INADIMPLENTE);
-            
-            
+
+
             status.Should().Be(StatusConsultaCredito.Inadimplente,
                 "Resultado incorreto para um CPF inadimplente");
         }

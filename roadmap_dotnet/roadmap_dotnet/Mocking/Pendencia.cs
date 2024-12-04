@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace roadmap_dotnet.Mocking
+﻿namespace roadmap_dotnet.Mocking
 {
     public class Pendencia
     {
