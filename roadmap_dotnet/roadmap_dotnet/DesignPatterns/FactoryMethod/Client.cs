@@ -9,17 +9,14 @@
 
             Console.WriteLine("");
 
-            Console.WriteLine("Publico pediu pro Deejay  tocar Jeff Berlin");
+            Console.WriteLine("Publico pediu pro Deejay tocar Jeff Berlin");
             ClientCode(new PedidoBom());
         }
                 
         public void ClientCode(PedidoMusica PlayerDeMusica)
         {
-            Console.WriteLine(
-                $"Sou um deejay mal pago e vou mandar pra Jukebox" +
-                $"{   
-                    PlayerDeMusica.tocaMusica() } " +
-                $"");            
+            Console.WriteLine($"Sou um deejay mal pago e vou mandar pra Jukebox" +
+                $"{ PlayerDeMusica.tocaMusica() } ");            
         }
     }
 }
