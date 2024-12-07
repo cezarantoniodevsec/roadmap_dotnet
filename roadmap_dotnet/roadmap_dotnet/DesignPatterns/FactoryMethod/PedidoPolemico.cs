@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace roadmap_dotnet.DesignPatterns.FactoryMethod
 {
-    class PedidoRuim : PedidoMusica
+    class PedidoPolemico : PedidoMusica
     {
         
         public override IJukeBox TocarMusica()
         {
-            return new JukeBoxRuim();
+            return new JukeBoxPolemica();
         }
     }
 

@@ -5,12 +5,12 @@
         public void Main()
         {
             Console.WriteLine("Publico pediu pro DeeJay tocar Pablo");
-            ClientCode(new PedidoRuim());
+            ClientCode(new PedidoPolemico());
 
             Console.WriteLine("");
 
             Console.WriteLine("Publico pediu pro Deejay tocar Jeff Berlin");
-            ClientCode(new PedidoBom());
+            ClientCode(new PedidoNeutro());
         }
                 
         public void ClientCode(PedidoMusica PlayerDeMusica)

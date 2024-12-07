@@ -1,6 +1,6 @@
 ﻿namespace roadmap_dotnet.DesignPatterns.FactoryMethod
 {
-    class JukeBoxRuim : IJukeBox
+    class JukeBoxPolemica : IJukeBox
     {
         public string TocaMusica()
         {

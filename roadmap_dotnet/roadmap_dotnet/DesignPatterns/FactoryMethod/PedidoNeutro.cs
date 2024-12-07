@@ -1,10 +1,10 @@
 ﻿namespace roadmap_dotnet.DesignPatterns.FactoryMethod
 {
-    class PedidoBom : PedidoMusica
+    class PedidoNeutro : PedidoMusica
     {
         public override IJukeBox TocarMusica()
         {
-            return new JukeboxBoa();
+            return new JukeboxNeutro();
         }
     }
 }
