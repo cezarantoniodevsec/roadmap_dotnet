@@ -1,5 +1,4 @@
 ﻿using roadmap_dotnet.Linq;
-using roadmap_dotnet.Linq.Models;
 
 namespace Test_RoadMap
 {
@@ -94,7 +93,7 @@ namespace Test_RoadMap
             {
                 "apple-9","orange-4","lemon-12"
             };
-                        
+
             Assert.Equal(lista, actual);
         }
 
@@ -105,7 +104,7 @@ namespace Test_RoadMap
             var actual = LinqOperations.makeExcept();
             var lista = new List<double>()
             {
-                2, 2.1, 2.3, 2.4,2.5 
+                2, 2.1, 2.3, 2.4,2.5
             };
 
             Assert.Equal(lista, actual);

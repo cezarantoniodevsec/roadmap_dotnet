@@ -5,7 +5,7 @@ using Serilog;
 
 TestaSingleTon();
 
-static void TestaSingleTon() 
+static void TestaSingleTon()
 {
     Singleton s1 = Singleton.GetInstance();
     Singleton s2 = Singleton.GetInstance();
@@ -18,7 +18,7 @@ static void TestaSingleTon()
     {
         Console.WriteLine("Singleton falhou. Os objetos contém estancias diferentes");
     }
-} 
+}
 
 static void TestaObserver()
 {

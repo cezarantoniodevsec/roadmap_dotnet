@@ -163,7 +163,7 @@ namespace roadmap_dotnet.Linq
                     Concat(dogs.Select(dog => dog.Name));
 
             return petsMisturados.ToList();
-        }        
+        }
 
         //	Distinct
         public static List<string> makeDistinct()
@@ -175,14 +175,14 @@ namespace roadmap_dotnet.Linq
                 new Product { Name = "apple", Code = 9 },
                 new Product { Name = "lemon", Code = 12 }
             };
-                        
+
             IEnumerable<Product> noduplicates =
                 products.Distinct(new ProductComparer());
 
             var nomeProdutos = new List<string>();
             foreach (var item in noduplicates.ToList())
             {
-                nomeProdutos.Add($"{item.Name}-{ item.Code }");
+                nomeProdutos.Add($"{item.Name}-{item.Code}");
             }
 
             return nomeProdutos;
@@ -194,14 +194,14 @@ namespace roadmap_dotnet.Linq
             double[] numbers1 = { 2.0, 2.0, 2.1, 2.2, 2.3, 2.3, 2.4, 2.5 };
             double[] numbers2 = { 2.2 };
 
-            IEnumerable<double> onlyInFirstSet = 
+            IEnumerable<double> onlyInFirstSet =
                 numbers1.Except(numbers2);
 
             return onlyInFirstSet.ToList();
         }
 
         //	GroupJoin
-        public static List<string> makeGroupJoin() 
+        public static List<string> makeGroupJoin()
         {
             Person magnus = new Person { Name = "Hedlund, Magnus" };
             Person terry = new Person { Name = "Adams, Terry" };
@@ -214,7 +214,7 @@ namespace roadmap_dotnet.Linq
 
             List<Person> people = new List<Person> { magnus, terry, charlotte };
             List<Pet> pets = new List<Pet> { barley, boots, whiskers, daisy };
-                        
+
             var query =
                 people.GroupJoin(pets,
                                  person => person,
@@ -227,54 +227,54 @@ namespace roadmap_dotnet.Linq
                                      });
 
             var nomesXProprietarios = new List<string>();
-            var combinacao = string.Empty; 
+            var combinacao = string.Empty;
 
             foreach (var obj in query)
             {
                 combinacao = obj.OwnerName;
-                                
+
                 foreach (string pet in obj.Pets)
                 {
                     combinacao += $"x{pet}";
                 }
 
-                nomesXProprietarios.Add(combinacao); 
+                nomesXProprietarios.Add(combinacao);
             }
             return nomesXProprietarios;
         }
 
         //	Intersect
         public static string makeIntersect()
-        {            
-            ProductA[] store1 = 
-            { 
-                new ProductA 
-                { 
-                    Name = "apple", Code = 9 
-                },                    
-                new ProductA 
-                { 
-                    Name = "orange", Code = 4 
-                } 
+        {
+            ProductA[] store1 =
+            {
+                new ProductA
+                {
+                    Name = "apple", Code = 9
+                },
+                new ProductA
+                {
+                    Name = "orange", Code = 4
+                }
             };
 
-            ProductA[] store2 = 
-            { 
-                new ProductA 
-                { 
-                    Name = "apple", Code = 9 
+            ProductA[] store2 =
+            {
+                new ProductA
+                {
+                    Name = "apple", Code = 9
                 },
-                new ProductA 
-                { 
-                    Name = "lemon", Code = 12 
-                } 
+                new ProductA
+                {
+                    Name = "lemon", Code = 12
+                }
             };
 
             IEnumerable<ProductA> duplicates = store1.Intersect(store2);
-            
+
             var interceptedProduct = duplicates.FirstOrDefault();
-            
-            return $"{interceptedProduct.Name} - { interceptedProduct.Code }";
+
+            return $"{interceptedProduct.Name} - {interceptedProduct.Code}";
         }
 
         //	SelectMany
