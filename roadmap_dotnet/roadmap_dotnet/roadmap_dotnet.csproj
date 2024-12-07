@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Solid\NewFolder\" />
+    <Folder Include="DynamicProxy\" />
   </ItemGroup>
 
   <ItemGroup>

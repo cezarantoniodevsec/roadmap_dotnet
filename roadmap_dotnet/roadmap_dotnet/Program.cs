@@ -1,6 +1,24 @@
 ﻿using roadmap_dotnet.DesignPatterns.Observer.Implementacoes;
+using roadmap_dotnet.DesignPatterns.SingleTon;
 using roadmap_dotnet.Logging;
 using Serilog;
+
+TestaSingleTon();
+
+static void TestaSingleTon() 
+{
+    Singleton s1 = Singleton.GetInstance();
+    Singleton s2 = Singleton.GetInstance();
+
+    if (s1 == s2)
+    {
+        Console.WriteLine("Teste de SingleTon realizado com sucesso. As duas instâncias são iguais.");
+    }
+    else
+    {
+        Console.WriteLine("Singleton falhou. Os objetos contém estancias diferentes");
+    }
+} 
 
 static void TestaObserver()
 {
