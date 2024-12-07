@@ -1,9 +1,11 @@
-﻿using roadmap_dotnet.DesignPatterns.Observer.Implementacoes;
+﻿using roadmap_dotnet.DesignPatterns.FactoryMethod;
+using roadmap_dotnet.DesignPatterns.Observer.Implementacoes;
 using roadmap_dotnet.DesignPatterns.SingleTon;
 using roadmap_dotnet.Logging;
 using Serilog;
 
-TestaSingleTon();
+
+TestaFactoryMethod();
 
 static void TestaSingleTon()
 {
@@ -19,6 +21,11 @@ static void TestaSingleTon()
         Console.WriteLine("Singleton falhou. Os objetos contém estancias diferentes");
     }
 }
+
+static void TestaFactoryMethod()
+{
+    new Client().Main();
+} 
 
 static void TestaObserver()
 {

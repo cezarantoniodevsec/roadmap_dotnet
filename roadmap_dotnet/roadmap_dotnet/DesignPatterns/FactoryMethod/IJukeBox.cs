@@ -1,7 +1,7 @@
 ﻿namespace roadmap_dotnet.DesignPatterns.FactoryMethod
 {
-    public interface IProduct
+    public interface IJukeBox
     {
-        string Operation();
+        string TocaMusica();
     }
 }

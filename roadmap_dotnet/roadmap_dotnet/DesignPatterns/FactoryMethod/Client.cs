@@ -1,35 +1,25 @@
-﻿using roadmap_dotnet.DesignPatterns.Factory;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace roadmap_dotnet.DesignPatterns.FactoryMethod
+﻿namespace roadmap_dotnet.DesignPatterns.FactoryMethod
 {
     class Client
     {
         public void Main()
         {
-            Console.WriteLine("App: Launched with the ConcreteCreator1.");
-            ClientCode(new ConcreteCreator1());
+            Console.WriteLine("Publico pediu pro DeeJay tocar Pablo");
+            ClientCode(new PedidoRuim());
 
             Console.WriteLine("");
 
-            Console.WriteLine("App: Launched with the ConcreteCreator2.");
-            ClientCode(new ConcreteCreator2());
+            Console.WriteLine("Publico pediu pro Deejay  tocar Jeff Berlin");
+            ClientCode(new PedidoBom());
         }
-
-        // The client code works with an instance of a concrete creator, albeit
-        // through its base interface. As long as the client keeps working with
-        // the creator via the base interface, you can pass it any creator's
-        // subclass.
-        public void ClientCode(Creator creator)
+                
+        public void ClientCode(PedidoMusica PlayerDeMusica)
         {
-            // ...
-            Console.WriteLine("Client: I'm not aware of the creator's class," +
-                "but it still works.\n" + creator.SomeOperation());
-            // ...
+            Console.WriteLine(
+                $"Sou um deejay mal pago e vou mandar pra Jukebox" +
+                $"{   
+                    PlayerDeMusica.tocaMusica() } " +
+                $"");            
         }
     }
 }
