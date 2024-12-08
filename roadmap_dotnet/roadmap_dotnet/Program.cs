@@ -25,7 +25,7 @@ static void TestaSingleTon()
 static void TestaFactoryMethod()
 {
     new Client().Main();
-} 
+}
 
 static void TestaObserver()
 {
